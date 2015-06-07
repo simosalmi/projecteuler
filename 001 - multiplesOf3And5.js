@@ -15,3 +15,9 @@ var getSumOfArray = function(arr) {
   		return previousValue + currentValue;
 	});
 };
+
+var getSumOfMultiplesOf3Or5Under = function (n) {
+    // 3(1+2+3+4+5+6+7 ... n-1)
+    // 5(1+2+3+4+5+6+7 ... n-1)
+    return SumOfMultiplesOfNUnder(3, n) + SumOfMultiplesOfNUnder(5, n) - SumOfMultiplesOfNUnder(15, n);
+}
